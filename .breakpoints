@@ -1,0 +1,20 @@
+{
+  "files": {
+    ".replit": [
+      {
+        "id": "58d4dbd1-6ceb-46bb-8855-4643fbb868d8",
+        "line": 1,
+        "version": 61,
+        "index": 0
+      }
+    ],
+    "app.py": [
+      {
+        "id": "bbc378c2-f10f-4a4e-b918-e2a9064181ec",
+        "line": 6,
+        "version": 246,
+        "index": 99
+      }
+    ]
+  }
+}
