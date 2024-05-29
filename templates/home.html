@@ -10,30 +10,34 @@
       height: 360px;
       width: 100%;
       object-fit: cover;
-      
-
-      
+      margin-bottom: 16px;
     }
   </style>
 </head>
- <body>
-  <div class = 'container'>
-   <h1 class = "text-center mt-2 mb-4"> {{company_name}} Growth School</h1>
-   <img class = "img-fulid" id = "banner" src = "https://c029b5c1-94f9-432f-8dd3-5c5f8eb6fe41-00-kpslhfqc738t.kirk.replit.dev/static/career.jpg" height = "320" >"
-   <h2 class = "text-center mt-2 mb-4";> About Growth School</h2>
-   <p class ="lead">Our mission is to provide exceptional staffing and recruiting services that contribute to the success of both businesses and job seekers. We strive to create lasting relationships based on trust, integrity, and mutual respect.
-   </p>
-   <h2 class = "text-center mt-2 mb-4"> Job openings</h2>
-   <p>
-     <div>
-     {% for job in jobs %}
-       {% include 'jobitem.html' %}
-     {% endfor %}
-     </div>
-   </p> 
-   <button class="btn btn-primary btn-lg">Contact Us</button>
-   <p>Copyright 2020, Career</p>
-   </div>
+<body>
+  {% include 'nav.html' %}
+  <img class="img-fluid" id="banner" src="https://c029b5c1-94f9-432f-8dd3-5c5f8eb6fe41-00-kpslhfqc738t.kirk.replit.dev/static/career.jpg" height="28">
+  <div class="container">
+    <h1 class="text-center mt-2 mb-4">{{company_name}} Growth School</h1>
+    <div class="row" style="margin-bottom: 16px">
+      <div class="col-md-6">
+        <p class="lead">Our mission is to provide exceptional staffing and recruiting services that contribute to the success of both businesses and job seekers. We strive to create lasting relationships based on trust, integrity, and mutual respect.</p>
+      </div>
+      <div class="d-none d-md-block col-md-6">
+        <img src="/static/people.work.jpg" style="height:320px; border-radius:4px;">
+      </div>
+    </div>
+    <h2 class="text-center mt-2 mb-4">Job Openings</h2>
+    <div>
+      {% for job in jobs %}
+        {% include 'jobitem.html' %}
+      {% endfor %}
+    </div>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg">Contact Us</button>
+      <p>Copyright 2020, Career</p>
+    </div>
   </div>
- </body>
+  {% include 'footer.html' %}
+</body>
 </html>

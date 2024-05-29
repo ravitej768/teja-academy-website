@@ -12,8 +12,16 @@
       {
         "id": "bbc378c2-f10f-4a4e-b918-e2a9064181ec",
         "line": 30,
-        "version": 591,
-        "index": 496
+        "version": 656,
+        "index": 514
+      }
+    ],
+    "templates/jobitem.html": [
+      {
+        "id": "8081d621-8962-4554-b60c-cdfea9d63244",
+        "line": 1,
+        "version": 621,
+        "index": 0
       }
     ]
   }
